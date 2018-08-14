@@ -6,12 +6,21 @@
     <style>
         body { margin:0; padding:0; }
         #map { position:absolute; top:0; bottom:0; width:100%; }
+        #selector { position:absolute; bottom:10; left: 10; background: #d3d3d3; border: 1px solid grey; padding: 15; }
     </style>
   </head>
   <body>
     <!--<h2>Hello Vector Tiles!</h2>-->
     <div id='map'></div>
+    <div id='selector'>
+      <select onchange="handleChangeLayer(this)">
+        <option value="">Select a Layer</option>
+        <option value="tzacen-wards">Wards</option>
+        <option value="tzacen-water">Water Bodies</option>
+      </select>
+    </div>
     <script>
+      var layers = [ 'tzacen-wards', 'tzacen-water' ]
       var map = new mapboxgl.Map({
           container: 'map',
           //style: 'https://www.myvectortiles.xyz/bright.json',
@@ -33,6 +42,13 @@
       // Add a marker set to the center of the map
       var marker = new mapboxgl.Marker({ color: 'red' })
         .setLngLat(map.getCenter()).setPopup(popup).addTo(map);
+
+      function handleChangeLayer(e) {
+        var v = e.value;
+        for (i=0; i<layers.length; i++) {
+          map.setLayoutProperty(layers[i], 'visibility', layers[i] === v ? 'visible' : 'none')
+        }
+      }
 
     </script>
   </body>

@@ -4922,6 +4922,9 @@
         "paint": {
             "fill-outline-color": "#f34607",
             "fill-color": "hsla(39, 100%, 50%, 0.1)"
+        },
+        "layout": {
+            "visibility": "none"
         }
     },
     {
@@ -4932,6 +4935,9 @@
         "paint": {
             "fill-outline-color": "#006994",
             "fill-color": "hsla(197, 100%, 29%, 0.5)"
+        },
+        "layout": {
+            "visibility": "none"
         }
     }
   ],
