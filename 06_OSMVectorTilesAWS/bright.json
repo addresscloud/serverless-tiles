@@ -41,11 +41,11 @@
   "sources": {
     "openmaptiles": {
       "type": "vector",
-      "url": "https://a.tiles.myvectortiles.xyz/tzadar/tile.json"
+      "url": "https://tiles.myvectortiles.xyz/tzadar/tile.json"
     }
   },
   "sprite": "https://openmaptiles.github.io/osm-bright-gl-style/sprite",
-  "glyphs": "https://free.tilehosting.com/fonts/{fontstack}/{range}.pbf",
+  "glyphs": "https://tiles.myvectortiles.xyz/fonts/{fontstack}/{range}.pbf",
   "layers": [
     {
       "id": "background",
@@ -4436,44 +4436,6 @@
       },
       "paint": {
         "text-color": "rgba(0, 0, 0, 1)"
-      }
-    },
-    {
-      "id": "airport-label-major",
-      "type": "symbol",
-      "source": "openmaptiles",
-      "source-layer": "aerodrome_label",
-      "minzoom": 10,
-      "filter": [
-        "all",
-        [
-          "has",
-          "iata"
-        ]
-      ],
-      "layout": {
-        "text-padding": 2,
-        "text-font": [
-          "Noto Sans Regular"
-        ],
-        "text-anchor": "top",
-        "icon-image": "airport_11",
-        "text-field": "{name:latin}\n{name:nonlatin}",
-        "text-offset": [
-          0,
-          0.6
-        ],
-        "text-size": 12,
-        "text-max-width": 9,
-        "visibility": "visible",
-        "icon-size": 1,
-        "text-optional": true
-      },
-      "paint": {
-        "text-halo-blur": 0.5,
-        "text-color": "#666",
-        "text-halo-width": 1,
-        "text-halo-color": "#ffffff"
       }
     },
     {
