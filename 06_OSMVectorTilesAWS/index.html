@@ -1,0 +1,18 @@
+<html>
+  <head>
+    <title>Hello Vector Tiles!</title>
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.47.0/mapbox-gl.js'></script>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.47.0/mapbox-gl.css' rel='stylesheet' />
+  </head>
+  <body>
+    <h2>Hello Vector Tiles!</h2>
+    <div id='map' style='width: 400px; height: 300px;'></div>
+    <script>
+    // mapboxgl.accessToken = 'pk.eyJ1IjoiYWRkcmVzc2Nsb3VkIiwiYSI6ImNqODM2MzZrYTMxajEyd280YXFseG4xeGEifQ.xQ9RxXGZ0Tdxh5YB_0-V5w';
+    var map = new mapboxgl.Map({
+        container: 'map',
+        style: 'https://tiles.myvectortiles.xyz/tzadar/bright.json'
+    });
+    </script>
+  </body>
+</html>
