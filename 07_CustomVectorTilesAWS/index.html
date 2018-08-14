@@ -1,0 +1,39 @@
+<html>
+  <head>
+    <title>Hello Vector Tiles!</title>
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.47.0/mapbox-gl.js'></script>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.47.0/mapbox-gl.css' rel='stylesheet' />
+    <style>
+        body { margin:0; padding:0; }
+        #map { position:absolute; top:0; bottom:0; width:100%; }
+    </style>
+  </head>
+  <body>
+    <!--<h2>Hello Vector Tiles!</h2>-->
+    <div id='map'></div>
+    <script>
+      var map = new mapboxgl.Map({
+          container: 'map',
+          //style: 'https://www.myvectortiles.xyz/bright.json',
+          style: 'http://localhost:5001/bright.json',
+          center: [39.292125,-6.810984],
+          zoom: 16
+      });
+      // Add zoom and rotation controls to the map.
+      map.addControl(new mapboxgl.NavigationControl());
+      // Add a fullscreen control
+      map.addControl(new mapboxgl.FullscreenControl());
+      // Add geolocate control to the map
+      map.addControl(new mapboxgl.GeolocateControl({
+          positionOptions: { enableHighAccuracy: true },
+          trackUserLocation: true
+      }));
+      // Create the popup
+      var popup = new mapboxgl.Popup({ offset: 25 }).setText('FOSS4G 2018 is here!');
+      // Add a marker set to the center of the map
+      var marker = new mapboxgl.Marker({ color: 'red' })
+        .setLngLat(map.getCenter()).setPopup(popup).addTo(map);
+
+    </script>
+  </body>
+</html>

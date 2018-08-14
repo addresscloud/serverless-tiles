@@ -1,0 +1,150 @@
+{
+	"attribution": "<a href=\"https://data.humdata.org/\" target=\"_blank\">The Humanitarian Data Exchange</a>",
+	"basename": "tzacen.mbtiles",
+	"bounds": [29.034215, -12.483311, 41.591395, -0.985787],
+	"center": [39.671631, -5.342583, 14],
+	"description": "Downloaded from https://data.humdata.org/",
+	"format": "pbf",
+	"id": "tzacen",
+	"maxzoom": 14,
+	"minzoom": 0,
+	"name": "Tanzania Census Boundaries",
+	"scheme": "xyz",
+	"tiles": ["https://a.tiles.myvectortiles.xyz/tzacen/{z}/{x}/{y}.pbf", "https://b.tiles.myvectortiles.xyz/tzacen/{z}/{x}/{y}.pbf"],
+	"vector_layers": [{
+		"id": "wards",
+		"description": "",
+		"minzoom": 10,
+		"maxzoom": 14,
+		"fields": {
+			"District_C": "String",
+			"District_N": "String",
+			"Division": "String",
+			"Region_Cod": "String",
+			"Region_Nam": "String",
+			"SHAPE_Area": "Number",
+			"SHAPE_Leng": "Number",
+			"Ward_Code": "String",
+			"Ward_Name": "String"
+		}
+	}, {
+		"id": "water",
+		"description": "",
+		"minzoom": 10,
+		"maxzoom": 14,
+		"fields": {
+			"AREA": "Number",
+			"LAKES": "String",
+			"PERIMETER": "Number",
+			"Shape_Area": "Number",
+			"Shape_Leng": "Number",
+			"TZ_05G_": "Number"
+		}
+	}],
+	"tilestats": {
+		"layerCount": 2,
+		"layers": [{
+			"layer": "wards",
+			"count": 3644,
+			"geometry": "Polygon",
+			"attributeCount": 9,
+			"attributes": [{
+				"attribute": "District_C",
+				"count": 10,
+				"type": "string",
+				"values": ["01", "02", "03", "04", "05", "06", "07", "08", "09", "10"]
+			}, {
+				"attribute": "District_N",
+				"count": 169,
+				"type": "string",
+				"values": ["Arusha", "Arusha Urban", "Babati", "Babati Urban", "Bagamoyo", "Bahi", "Bariadi", "Biharamulo", "Buhigwe", "Bukoba Rural", "Bukoba Urban", "Bukombe", "Bunda", "Busega", "Butiama", "Chake Chake", "Chamwino", "Chato", "Chemba", "Chunya", "Dodoma Urban", "Gairo", "Geita", "Hai", "Hanang", "Handeni", "Handeni Township Authority", "Igunga", "Ikungi", "Ilala", "Ileje", "Ilemela", "Iramba", "Iringa Rural", "Iringa Urban", "Itilima", "Kahama", "Kahama Township Authority", "Kakonko", "Kalambo", "Kaliua", "Karagwe", "Karatu", "Kaskazini A", "Kaskazini B", "Kasulu", "Kasulu Township Authority", "Kati", "Kibaha", "Kibaha Urban", "Kibondo", "Kigoma Municipal-Ujiji", "Kigoma Rural", "Kilindi", "Kilolo", "Kilombero", "Kilosa", "Kilwa", "Kinondoni", "Kisarawe", "Kishapu", "Kiteto", "Kondoa", "Kongwa", "Korogwe", "Korogwe Township Authority", "Kusini", "Kwimba", "Kyela", "Kyerwa", "Lindi Rural", "Lindi Urban", "Liwale", "Longido", "Ludewa", "Lushoto", "Mafia", "Mafinga Township Authority", "Magharibi", "Magu", "Makambako Township Authority", "Makete", "Manyoni", "Masasi", "Masasi Township Authority", "Maswa", "Mbarali", "Mbeya Rural", "Mbeya Urban", "Mbinga", "Mbogwe", "Mbozi", "Mbulu", "Meatu", "Meru", "Micheweni", "Missenyi", "Misungwi", "Mjini", "Mkalama"]
+			}, {
+				"attribute": "Division",
+				"count": 281,
+				"type": "string",
+				"values": ["Amani", "Bombo", "Buchosa", "Bugabo", "Bugene", "Buhingu", "Buhoro", "Bulambya", "Bumbuli", "Bundali", "Bungu", "Busekelo", "Buyonga", "Bwembwera", "Chala", "Chamriho", "Chanika", "Chikundi", "Chilangala", "Chiungutwa", "Chumbageni", "Dihimba", "Elerai", "Endabash", "Enduyment", "Eyasi", "Girango", "Gonja", "Grumeti", "Hagati", "Hai Mashariki", "Hanga", "Heru Chini", "Heru Juu", "Ibindo", "Igamba", "Ikorongo", "Ilagala", "Ilangala", "Ilemela", "Ilongo", "Inaboisho", "Inano", "Inchage", "Inchugu", "Ingwe", "Inonelwa", "Inyonga", "Isangati", "Itaka", "Itumbili", "Itwelele", "Iyula", "Iyunga", "Izigo", "Jipendea", "Kabungu", "Kahangara", "Kahunda", "Kakonko", "Kalinzi", "Kamachumu", "Kamsamba", "Kanazi", "Karatu", "Karema", "Kasanda", "Kasanga", "Kasharunga", "Kate", "Katerero", "Katunguru", "Kenkombyo", "Kiagata", "Kibondo Mjini", "Kibosho", "Kifura", "Kigoma Kaskazini", "Kigoma Kusini", "Kigonsera", "Kimbe", "Kimwani", "King'ori", "Kipambawe", "Kipeta", "Kirando", "Kisongo", "Kitangari", "Kitaya", "Kitumbeine", "Kituntu", "Kiwanja", "Kiziba", "Korogwe", "Kwamsisi", "Kwekivu", "Kyamtwara", "Laela", "Lembeni", "Lisekese"]
+			}, {
+				"attribute": "Region_Cod",
+				"count": 30,
+				"type": "string",
+				"values": ["01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "51", "52", "53", "54", "55"]
+			}, {
+				"attribute": "Region_Nam",
+				"count": 30,
+				"type": "string",
+				"values": ["Arusha", "Dar-es-salaam", "Dodoma", "Geita", "Iringa", "Kagera", "Kaskazini Pemba", "Kaskazini Unguja", "Katavi", "Kigoma", "Kilimanjaro", "Kusini Pemba", "Kusini Unguja", "Lindi", "Manyara", "Mara", "Mbeya", "Mjini Magharibi", "Morogoro", "Mtwara", "Mwanza", "Njombe", "Pwani", "Rukwa", "Ruvuma", "Shinyanga", "Simiyu", "Singida", "Tabora", "Tanga"]
+			}, {
+				"attribute": "SHAPE_Area",
+				"count": 1000,
+				"type": "number",
+				"values": [0.0000059905934117, 0.00000627778111548, 0.00000677618842701, 0.00000704619696902, 0.00000714724893416, 0.00000733510855022, 0.0000082887278867, 0.00000841459654471, 0.00000876766637501, 0.00000931440696203, 0.00000944078516739, 0.0000104185674012, 0.0000105905490593, 0.0000107203259034, 0.0000114571905457, 0.0000115902939423, 0.0000119642479375, 0.0000121571308206, 0.0000122146321851, 0.0000122262087822, 0.0000126751860685, 0.0000137345963185, 0.0000137580281983, 0.0000141574531884, 0.0000148710831461, 0.0000162782879789, 0.0000165451254086, 0.0000169243077243, 0.0000179573449226, 0.0000184789164317, 0.0000190302824791, 0.0000192842847538, 0.0000193082905457, 0.0000197758022562, 0.0000206097924041, 0.0000223496900743, 0.0000234039732493, 0.0000234579140569, 0.0000246533409929, 0.0000247233018142, 0.0000249371380257, 0.0000264960563123, 0.0000273198590299, 0.0000278996126515, 0.0000279098153443, 0.0000282925808272, 0.0000286190290342, 0.0000294461097074, 0.0000295555736807, 0.0000299484077567, 0.0000306797385988, 0.0000308199091572, 0.0000310872627051, 0.0000314846873891, 0.0000316507689764, 0.0000318355083036, 0.0000324578230071, 0.0000334321208221, 0.0000337486983763, 0.0000338806808236, 0.0000341945266192, 0.0000354322551762, 0.000035754733499, 0.0000364820139915, 0.0000389009445923, 0.000039054727896, 0.0000402487102817, 0.0000403092923157, 0.0000403928709621, 0.0000435001156222, 0.0000435836672656, 0.000043827957104, 0.0000452183827216, 0.0000461150341658, 0.0000463041326737, 0.0000464003885396, 0.0000468427490132, 0.0000472502910035, 0.000048749586837, 0.0000492998448317, 0.0000510611875373, 0.0000512677940423, 0.0000516095118451, 0.0000524475995894, 0.0000525048837185, 0.000056431377024, 0.0000577425331791, 0.0000580048758378, 0.000058017883267, 0.0000585739774114, 0.0000604063827905, 0.0000608048448698, 0.0000620096930868, 0.0000641489667192, 0.0000648912586367, 0.0000663392980681, 0.0000685745440289, 0.0000690877706221, 0.0000697591277853, 0.0000699522510828],
+				"min": 0.0000059905934117,
+				"max": 0.928253270256
+			}, {
+				"attribute": "SHAPE_Leng",
+				"count": 1000,
+				"type": "number",
+				"values": [0.0103364558854, 0.0122946631072, 0.0128169026977, 0.0132808922363, 0.0138950258189, 0.0142340711359, 0.0145422065992, 0.0148147791618, 0.0148156304606, 0.0152714619947, 0.0155806645008, 0.0158590277803, 0.0159557856033, 0.0160049706659, 0.0160414322987, 0.0162172724538, 0.0162856514623, 0.0164109493695, 0.0166098361909, 0.0176294218161, 0.0176817308114, 0.0178059492158, 0.0178837371936, 0.0180082777355, 0.0181539852024, 0.0189526323026, 0.0190294974691, 0.0190366033138, 0.0191903321073, 0.0194549565187, 0.0197393078249, 0.0197644735828, 0.0207654383904, 0.0210268363898, 0.0212164029565, 0.0216913820255, 0.0220628823342, 0.0221220252738, 0.0227885802106, 0.0228487074677, 0.0231011961031, 0.0232114868698, 0.0232288792414, 0.0233306922477, 0.0233511566481, 0.0236358622923, 0.0244634611414, 0.0245848854529, 0.0248828686609, 0.0252312377274, 0.0259352546878, 0.026234164488, 0.0267013201144, 0.0269707359611, 0.0272194160878, 0.0274025077978, 0.0276698895992, 0.0278401387769, 0.0283259691787, 0.0283624411192, 0.0283863444143, 0.0289685457416, 0.0291175474365, 0.0292398453075, 0.0301792950299, 0.030387158336, 0.0307408975291, 0.0310231038503, 0.0310972423848, 0.0311929454571, 0.0315399584932, 0.032713399405, 0.0327789869716, 0.0331187797425, 0.0333043091553, 0.0338431614166, 0.0339607837872, 0.0339691872121, 0.0340924532622, 0.0349935162066, 0.0354964371798, 0.0356171838375, 0.0356284614022, 0.0357597527299, 0.0358237900476, 0.0361380878735, 0.0362647880816, 0.0365490255687, 0.0366503239227, 0.0366632911452, 0.0371554207714, 0.0371670367149, 0.037542338194, 0.0377471476174, 0.0377721655635, 0.0378709882476, 0.0380279673002, 0.0386344094009, 0.0389939734104, 0.039012528288],
+				"min": 0.0103364558854,
+				"max": 6.39559993421
+			}, {
+				"attribute": "Ward_Code",
+				"count": 127,
+				"type": "string",
+				"values": ["011", "012", "013", "021", "022", "023", "031", "032", "033", "041", "042", "043", "051", "052", "053", "061", "062", "063", "071", "072", "073", "081", "082", "083", "091", "092", "093", "101", "102", "103", "111", "112", "113", "121", "122", "123", "131", "132", "133", "141", "142", "143", "151", "152", "153", "161", "162", "163", "171", "172", "173", "181", "182", "183", "191", "192", "193", "201", "202", "203", "211", "212", "213", "221", "222", "223", "231", "232", "233", "241", "242", "243", "251", "252", "253", "261", "262", "263", "271", "272", "273", "281", "282", "283", "291", "292", "293", "301", "302", "303", "311", "312", "313", "321", "322", "323", "331", "332", "333", "341"]
+			}, {
+				"attribute": "Ward_Name",
+				"count": 1000,
+				"type": "string",
+				"values": ["Aghondi", "Akheri", "Alailelai", "Aleni", "Amani", "Arash", "Arri", "Arusha Chini", "Asante Nyerere", "Ayamaami", "Ayamohe", "Ayasanda", "Azimio", "Babati", "Babayu", "Badi", "Badugu", "Baga", "Bagamoyo", "Bagara", "Bahi", "Bakoba", "Balagidalalu", "Baleni", "Balili", "Bambi", "Bandamaji", "Bangata", "Bangwe", "Bara", "Baraa", "Baray", "Bargish", "Bariadi", "Barikiwa", "Bashay", "Bashneti", "Bassodesh", "Bassotu", "Bendera", "Berega", "Berege", "Bereko", "Bigwa", "Biharamulo Mjini", "Biharu", "Biirabo", "Bilele", "Binagi", "Binguni", "Binza", "Biriri", "Biro", "Bisheke", "Bisibo", "Bisumwa", "Bitale", "Bitare", "Boay", "Bokomnemela", "Bolisa", "Boma", "Boma Mbuzi", "Boma la Ng'ombe", "Bomani", "Bombambili", "Bombo", "Bonde la Songwe", "Bondeni", "Bonga", "Bopwe", "Bosha", "Bubiki", "Bububu", "Buchambi", "Budalabujiga", "Budekwa", "Budushi", "Bugaga", "Bugalama", "Bugandika", "Bugando", "Buganguzi", "Bugarama", "Bugelenga", "Bugene", "Buger", "Bugogwa", "Bugomora", "Bugorora", "Bugulula", "Buguruni", "Bugwema", "Buhanda", "Buhangaza", "Buhare", "Buhemba", "Buhendangabo", "Buhigwe", "Buhingo"]
+			}]
+		}, {
+			"layer": "water",
+			"count": 19,
+			"geometry": "Polygon",
+			"attributeCount": 6,
+			"attributes": [{
+				"attribute": "AREA",
+				"count": 1,
+				"type": "number",
+				"values": [0],
+				"min": 0,
+				"max": 0
+			}, {
+				"attribute": "LAKES",
+				"count": 12,
+				"type": "string",
+				"values": ["Indian Ocean", "Lake  Nyasa", "Lake Eyasi", "Lake Ikimba", "Lake Jipe", "Lake Manyara", "Lake Natron", "Lake Rukwa", "Lake Sagara", "Lake Tanganyika", "Lake Victoria", "Nyumba ya Mungu DAM"]
+			}, {
+				"attribute": "PERIMETER",
+				"count": 1,
+				"type": "number",
+				"values": [0],
+				"min": 0,
+				"max": 0
+			}, {
+				"attribute": "Shape_Area",
+				"count": 19,
+				"type": "number",
+				"values": [0.000358699976509, 0.00202611925319, 0.00203309836698, 0.00232268437155, 0.00242904190763, 0.00276565048975, 0.00288033049498, 0.00292819316657, 0.0043726181806, 0.00917751348991, 0.0354332147488, 0.0600254677796, 0.0639379361022, 0.0891680138103, 0.413218788085, 0.85427728225, 18.6821063836, 2.64337571023, 2.82074356882],
+				"min": 0.000358699976509,
+				"max": 18.6821063836
+			}, {
+				"attribute": "Shape_Leng",
+				"count": 19,
+				"type": "number",
+				"values": [0.0783574100076, 0.22257731572, 0.251172735101, 0.260171816184, 0.268544363734, 0.323753044342, 0.461219816478, 0.48189699712, 0.494121737662, 0.742819677976, 0.974514779155, 1.39811701945, 17.3573473577, 2.15460631523, 3.86753974272, 33.2163599633, 4.5811389133, 59.8945827356, 7.55817427827],
+				"min": 0.0783574100076,
+				"max": 59.8945827356
+			}, {
+				"attribute": "TZ_05G_",
+				"count": 1,
+				"type": "number",
+				"values": [0],
+				"min": 0,
+				"max": 0
+			}]
+		}]
+	},
+	"version": "2.0.0"
+}
