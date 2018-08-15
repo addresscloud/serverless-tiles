@@ -28,7 +28,7 @@
           container: 'map',
           style: 'https://www.myvectortiles.xyz/bright.json',
           center: [ 39.292125, -6.810984 ],
-          zoom: 16
+          zoom: 14
       });
 
       // Add zoom and rotation controls to the map.
@@ -49,6 +49,16 @@
       // Add a marker set to the center of the map
       var marker = new mapboxgl.Marker({ color: 'red' })
         .setLngLat(map.getCenter()).setPopup(popup).addTo(map);
+
+      // Show a popup when the user clicks on the wards layer
+      map.on('click', 'tzacen-wards', function (e) {
+        var properties = e.features[0].properties
+        new mapboxgl.Popup()
+          .setLngLat(e.lngLat)
+          .setHTML('<b>' + properties.Ward_Name + ' (' + properties.Ward_Code + ')</b><br/>' +
+            properties.District_N + ', ' + properties.Region_Nam )
+          .addTo(map);
+      });
 
       // Change the cursor to a pointer when the mouse is over the wards layer
       map.on('mouseenter', 'tzacen-wards', function () {

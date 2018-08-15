@@ -4921,7 +4921,7 @@
         "source-layer": "wards",
         "paint": {
             "fill-outline-color": "#f34607",
-            "fill-color": "hsla(39, 100%, 50%, 0.1)"
+            "fill-color": "hsla(39, 100%, 50%, 0.3)"
         },
         "layout": {
             "visibility": "none"
