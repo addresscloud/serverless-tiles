@@ -15,9 +15,9 @@ Once complete you should have something like this running on your own domain on 
 
 ### Pre-Requisites
 
-•	An AWS account
-•	A domain name that can be used for the exercise (this will need to be re-pointed so make sure it is not being used for anything else!). namecheap.com have domains starting at $0.48 per year but make sure you switch off auto-renew!
-•	Patience – there is a lot of AWS config to make this work and no sign of a map until Step 5 but this will be worth it, trust me
+-	An AWS account
+-	A domain name that can be used for the exercise (this will need to be re-pointed so make sure it is not being used for anything else!). namecheap.com have domains starting at $0.48 per year but make sure you switch off auto-renew!
+-	Patience – there is a lot of AWS config to make this work and no sign of a map until Step 5 but this will be worth it, trust me
 
 ### Materials
 
