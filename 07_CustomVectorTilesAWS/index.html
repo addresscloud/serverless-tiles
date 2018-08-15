@@ -10,8 +10,11 @@
     </style>
   </head>
   <body>
-    <!--<h2>Hello Vector Tiles!</h2>-->
+
+    <!-- Map -->
     <div id='map'></div>
+
+    <!-- Select Layer Control -->
     <div id='selector'>
       <select onchange="handleChangeLayer(this)">
         <option value="">Select a Layer</option>
@@ -19,6 +22,7 @@
         <option value="tzacen-water">Water Bodies</option>
       </select>
     </div>
+
     <script>
       // Setup our layers array
       var layers = [ 'tzacen-wards', 'tzacen-water' ]
@@ -70,6 +74,7 @@
         map.getCanvas().style.cursor = '';
       });
 
+      // Adjust visibility on the layers when the user changes the layer selection
       function handleChangeLayer(e) {
         var v = e.value;
         for (i=0; i<layers.length; i++) {
