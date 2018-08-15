@@ -20,27 +20,45 @@
       </select>
     </div>
     <script>
+      // Setup our layers array
       var layers = [ 'tzacen-wards', 'tzacen-water' ]
+
+      // Create our map
       var map = new mapboxgl.Map({
           container: 'map',
           style: 'https://www.myvectortiles.xyz/bright.json',
-          center: [39.292125,-6.810984],
+          center: [ 39.292125, -6.810984 ],
           zoom: 16
       });
+
       // Add zoom and rotation controls to the map.
       map.addControl(new mapboxgl.NavigationControl());
+
       // Add a fullscreen control
       map.addControl(new mapboxgl.FullscreenControl());
+
       // Add geolocate control to the map
       map.addControl(new mapboxgl.GeolocateControl({
           positionOptions: { enableHighAccuracy: true },
           trackUserLocation: true
       }));
+
       // Create the popup
       var popup = new mapboxgl.Popup({ offset: 25 }).setText('FOSS4G 2018 is here!');
+
       // Add a marker set to the center of the map
       var marker = new mapboxgl.Marker({ color: 'red' })
         .setLngLat(map.getCenter()).setPopup(popup).addTo(map);
+
+      // Change the cursor to a pointer when the mouse is over the wards layer
+      map.on('mouseenter', 'tzacen-wards', function () {
+        map.getCanvas().style.cursor = 'pointer';
+      });
+
+      // Change it back to a pointer when it leaves
+      map.on('mouseleave', 'tzacen-wards', function () {
+        map.getCanvas().style.cursor = '';
+      });
 
       function handleChangeLayer(e) {
         var v = e.value;
