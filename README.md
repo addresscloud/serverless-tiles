@@ -13,6 +13,8 @@ Once complete you should have something like this running on your own domain on 
 
 ![My Serverless Vector Tiles Map](https://github.com/addresscloud/serverless-tiles/raw/master/demo2.gif)
 
+You can play around with this yourself at the [Demo Site](https://www.myvectortiles.xyz/)
+
 ### Pre-Requisites
 
 -	An AWS account
