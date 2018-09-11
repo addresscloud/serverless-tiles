@@ -1,5 +1,5 @@
 # Serverless Vector Tiles on AWS
-This tutorial and accompanying presentation is based on a talk I gave at [FOSS4G 2018 in Tanzania](https://2018.foss4g.org/) and will cover off the following tasks:
+This [tutorial](https://github.com/addresscloud/serverless-tiles/raw/master/Serverless%20Vector%20Tiles%20on%20AWS.pdf) and accompanying [presentation](https://github.com/addresscloud/serverless-tiles/raw/master/FOSS4G2018%20Serverless%20Vector%20Tiles%20on%20AWS.pdf) is based on a talk I gave at [FOSS4G 2018 in Tanzania](https://2018.foss4g.org/) and will cover off the following tasks:
 
 1. Host a simple webpage on AWS (Hello S3!)
 2. Host the webpage from our own domain (Hello Route 53!)
